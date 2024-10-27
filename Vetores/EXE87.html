@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 87</title>
+  </head>
+  <body>
+    <h1>
+      Faça um programa que leia 10 números inteiros e exiba quantos deles são
+      positivos.
+    </h1>
+
+    <script>
+      let numeros = [3, -500, 121, -25, 8, -12, 10, -31, 400, -6];
+
+      let positivos = 0;
+      for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] > 0) {
+          positivos++;
+        }
+      }
+      document.write("Total de números positivos: " + positivos);
+    </script>
+  </body>
+</html>

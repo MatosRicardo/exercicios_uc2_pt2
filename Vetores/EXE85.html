@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 85</title>
+  </head>
+  <body>
+    <h1>
+      Escreva um programa que leia 5 números inteiros e exiba o maior e o menor
+      valor digitado.
+    </h1>
+    <script>
+      let numero = [20, 2, 90, 8, 51];
+
+      let maior = 0;
+
+      let menor = 0;
+
+      for (let i = 0; i < numero.length; i++) {
+        if (numero[i] > maior) {
+          maior = numero[i];
+        }
+
+        if (numero[i] < menor || menor == 0) {
+          menor = numero[i];
+        }
+      }
+
+      document.write("Menor número: " + menor);
+      document.write("Maior número: " + maior);
+    </script>
+  </body>
+</html>

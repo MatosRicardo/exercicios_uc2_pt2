@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 93</title>
+  </head>
+  <body>
+    <h1>
+      Faça um programa que leia 10 números inteiros e exiba quantos deles estão
+      no intervalo de 10 a 50.
+    </h1>
+
+    <script>
+      let cont = 0;
+
+      for (let i = 0; i < 10; i++) {
+        let num = Number(prompt("Digite o " + (i + 1) + " numero:"));
+        if (num >= 10 && num <= 50) {
+          cont++;
+        }
+      }
+      document.write("Total de números no intervalo de 10 a 50: " + cont);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 91</title>
+  </head>
+  <body>
+    <h1>
+      Escreva um programa que leia 10 números inteiros e exiba a soma dos
+      valores positivos e a soma dos valores negativos.
+    </h1>
+
+    <script>
+      let soma = 0;
+      let negativo = 0;
+      let contador = 0;
+
+      while (contador < 10) {
+        let num = Number(prompt("Digite um numero:"));
+        if (num > 0) soma += num;
+        else if (num < 0) negativo += num;
+        contador++;
+      }
+      document.write(
+        `Soma dos positivos ${soma}, soma dos negativos ${negativo}`
+      );
+    </script>
+  </body>
+</html>

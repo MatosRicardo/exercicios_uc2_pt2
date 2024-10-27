@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 83</title>
+  </head>
+  <body>
+    <h1>
+      Crie um programa que leia 7 números inteiros e exiba a média aritmética
+      dos valores lidos.
+    </h1>
+    <script>
+      let soma = 0;
+      let conta = 0;
+      while (conta < 7) {
+        let num = Number(prompt("Digite um numero:"));
+        soma += num;
+        conta++;
+      }
+      document.write("Média: " + soma / 7 + "<br>");
+    </script>
+  </body>
+</html>
