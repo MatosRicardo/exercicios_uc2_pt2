@@ -10,6 +10,32 @@
       Crie um programa que leia uma matriz 4x4 de números inteiros e exiba a
       média aritmética dos elementos.
     </h1>
-    <script></script>
+    <script>
+      let matriz = [
+        [20, 12, 73, 5],
+        [55, 5, 37, 4],
+        [92, 10, 41, 12],
+        [19, 54, 15],
+      ];
+
+      let soma = 0;
+      let contador = 0;
+
+      for (let i = 0; i < matriz.length; i++) {
+        for (let n = 0; n < matriz[i].length; n++) {
+          soma += matriz[i][n];
+          contador++;
+        }
+      }
+
+      let media = soma / contador;
+      media = Math.floor(media);
+
+      for (let i = 0; i < matriz.length; i++) {
+        document.write(`<p>[${matriz[i].join(", ")}]</p>`);
+      }
+
+      document.write(`Média aritmética: ${media}`);
+    </script>
   </body>
 </html>
